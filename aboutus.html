@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #faad96;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(./logocafe2.png);
+            background-size: 40%;
+            background-position: center;
+            opacity: 0.2; 
+            z-index: -1; 
+        }
+
+        .heading {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .heading h1 {
+            font-size: 50px;
+            color: #000;
+            margin-bottom: 20px;
+            position: relative;
+            padding: 10px;
+            text-decoration:underline orangered;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 4px 10px orangered;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+
+        .card p {
+            font-size: 18px;
+            color: #666;
+            text-align: justify;
+        }
+
+        .logo {
+            margin-top: 30px;
+            width: 500px;;
+            height: 500px;;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="heading">
+        <h1>About Us</h1>
+        <div class="card">
+            <p>Welcome to The Royal Cafe, where we bring the heart and soul of Indore’s culinary heritage right to the streets of Law Gate. Our story began with a passion for the rich, authentic flavors of Indore—a city renowned for its vibrant food scene and unique street snacks. As natives of Indore, we’ve always been inspired by the city’s bustling food markets, aromatic spices, and the irresistible, one-of-a-kind dishes that bring people together. Now, we’re excited to share these flavors with all over the country's people!
+
+                At The Royal Cafe, every dish is a tribute to Indore’s timeless recipes and cherished traditions. We’ve carefully curated a menu that features the best of Indore’s specialties, from the savory kick of Poha to the golden, syrupy sweetness of Jalebi. Our mission is to offer Jalandhar locals and visitors a true taste of Indore, combining high-quality ingredients, authentic spices, and a touch of home in every bite.
+
+                Our cafe isn’t just about food; it’s about creating a welcoming space where everyone can experience the warmth of Indore’s hospitality. Whether you're new to Indore flavors or nostalgic for a taste of home, we invite you to discover what makes our food—and our city—so special. Join us on this flavorful journey and let us show you why Indore’s cuisine is loved by so many.
+
+                So pull up a chair, bring your appetite, and let’s make memories together.
+            </p>
+        </div>
+    </div>
+
+    <img src="./logocafe2.png" alt="Cafe Logo" class="logo">
+</body>
+</html>
