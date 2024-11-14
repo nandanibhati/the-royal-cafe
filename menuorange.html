@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #faad96;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 50px;
+            position: relative;
+        }
+
+        
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(./logocafe2.png);
+            background-size: 40%;
+            background-position: center;
+            opacity: 0.2; 
+            z-index: -1; 
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline orangered;
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; 
+        }
+
+        .menu-card {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 4px 10px orangered;
+            border-radius: 8px;
+            width: 280px; 
+            margin-top: 40px;
+            overflow-y: auto; 
+            max-height: 450px;
+        }
+
+        .menu-card h3 {
+            font-size: 24px;
+            color: black;
+            margin-bottom: 15px;
+            border-bottom: 2px solid orangered;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        .menu-item {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .price {
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="background"></div>
+
+<h1>Our Menu</h1>
+
+<div class="menu-container">
+    <div class="menu-card">
+        <h3>Coffee</h3>
+        <div class="menu-item">Hot Coffee <span class="price">₹20</span></div>
+        <div class="menu-item">Cold Coffee <span class="price">₹30</span></div>
+        <div class="menu-item">Ginger Tea <span class="price">₹20</span></div>
+        <div class="menu-item">Green Tea <span class="price">₹20</span></div>
+    </div>
+
+    <div class="menu-card">
+        <h3>Smoothies</h3>
+        <div class="menu-item">Banana Smoothie <span class="price">₹69</span></div>
+        <div class="menu-item">Mango Smoothie <span class="price">₹79</span></div>
+        <div class="menu-item">Strawberry Smoothie <span class="price">₹79</span></div>
+        <div class="menu-item">Kiwi Honey Smoothie <span class="price">₹89</span></div>
+        <div class="menu-item">Dry Fruit Smoothie <span class="price">₹99</span></div>
+    </div>
+
+    <div class="menu-card">
+        <h3>Mocktails</h3>
+        <div class="menu-item">Blue Lagoon <span class="price">₹59</span></div>
+        <div class="menu-item">Misty Mint <span class="price">₹49</span></div>
+        <div class="menu-item">Lemon Fizz <span class="price">₹69</span></div>
+        <div class="menu-item">Black Current <span class="price">₹59</span></div>
+        <div class="menu-item">Strawberry Crush <span class="price">₹69</span></div>
+        <div class="menu-item">Green Apple <span class="price">₹59</span></div>
+    </div>
+
+    <div class="menu-card">
+        <h3>Snacks</h3>
+        <div class="menu-item">Masala Fries <span class="price">₹60</span></div>
+        <div class="menu-item">Peri Peri Fries <span class="price">₹70</span></div>
+        <div class="menu-item">Cheese Fries <span class="price">₹80</span></div>
+        <div class="menu-item">Cheese Balls <span class="price">₹60</span></div>
+        <div class="menu-item">Garlic Bread <span class="price">₹60</span></div>
+        <div class="menu-item">Stuffed Garlic Bread <span class="price">₹99</span></div>
+    </div>
+
+    <div class="menu-card">
+        <h3>Pasta</h3>
+        <div class="menu-item">Masala Pasta <span class="price">₹89</span></div>
+        <div class="menu-item">Alfredo Pasta <span class="price">₹129</span></div>
+        <div class="menu-item">Arrabiata Pasta <span class="price">₹128</span></div>
+        <div class="menu-item">Tandoori Pasta <span class="price">₹129</span></div>
+    </div>
+
+    <div class="menu-card">
+        <h3>Chinese</h3>
+        <div class="menu-item">Veg Noodles (D/C) <span class="price">₹109</span></div>
+        <div class="menu-item">Hakka Noodles <span class="price">₹129</span></div>
+        <div class="menu-item">Chinese Bhel <span class="price">₹109</span></div>
+        <div class="menu-item">Fried Rice <span class="price">₹129</span></div>
+        <div class="menu-item">Chilli Paneer <span class="price">₹139</span> (D-Dry, C-Gravy)</div>
+        <div class="menu-item">Manchurian (D/C) <span class="price">₹129</span></div>
+    </div>
+
+    <div class="menu-card">
+        <h3>Maggi</h3>
+        <div class="menu-item">Butter Maggi <span class="price">₹59</span></div>
+        <div class="menu-item">Masala Maggi <span class="price">₹59</span></div>
+        <div class="menu-item">Double Masala Maggi <span class="price">₹69</span></div>
+        <div class="menu-item">Veg Maggi <span class="price">₹59</span></div>
+        <div class="menu-item">Veg Cheese Maggi <span class="price">₹69</span></div>
+        <div class="menu-item">Schezwan Maggi <span class="price">₹69</span></div>
+        <div class="menu-item">Punjabi Tadka Maggi <span class="price">₹99</span></div>
+        <div class="menu-item">Tandoori Paneer Maggi <span class="price">₹119</span></div>
+    </div>
+
+    <div class="menu-card">
+        <h3>Burger</h3>
+        <div class="menu-item">Aloo Tikki Burger <span class="price">₹59</span></div>
+        <div class="menu-item">Veg Tikki Burger <span class="price">₹59</span></div>
+        <div class="menu-item">Double Tikki Burger <span class="price">₹89</span></div>
+        <div class="menu-item">veg Cheese Burger <span class="price">₹89</span></div>
+        <div class="menu-item">Paneer Burger <span class="price">₹89</span></div>
+    </div>
+    <div class="menu-card">
+        <h3>Kunafa</h3>
+        <div class="menu-item">Traditional kunafa<span class="price">₹99</span></div>
+        <div class="menu-item">Nuttela kunafa <span class="price">₹119</span></div>
+        <div class="menu-item">Dark Nut kunafa <span class="price">₹119</span></div>
+        <div class="menu-item">Blueberry kunafa <span class="price">₹129</span></div>
+       
+    </div>
+    <div class="menu-card">
+        <h3>Dessert</h3>
+        <div class="menu-item">Hot chocolate <span class="price">₹39</span></div>
+        <div class="menu-item">Fried Ice-cream<span class="price">₹59</span></div>
+        <div class="menu-item">Hot chocolate brownie <span class="price">₹79</span></div>
+        <div class="menu-item">Brownie sundae <span class="price">₹99</span></div>
+       
+    </div>
+</div>
+
+</body>
+</html>
